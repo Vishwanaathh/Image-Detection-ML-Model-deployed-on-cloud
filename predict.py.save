@@ -1,0 +1,10 @@
+from ultralytics import YOLO
+import sys, json
+
+image_path = sys.argv[1]
+model = YOLO("best.pt")
+
+results = model.predict(source=image_path, conf=0.25, save=False, imgsz=640)
+pred = results[0]
+
+if len(pred.boxe

@@ -1,0 +1,5 @@
+ultralytics
+torch
+torchvision
+boto3
+psycopg2-binary
